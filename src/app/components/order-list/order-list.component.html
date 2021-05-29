@@ -1,0 +1,15 @@
+<div>
+  <div *ngIf="!editing">
+    <div class="order-item new-order" (click)="create()">צור הזמנה חדשה</div>
+    <div *ngFor="let order of orders">
+      <div class="order-item">
+        <mat-icon (click)="remove(order)">remove_circle</mat-icon>
+        <div>{{order.id}}</div>
+        <mat-icon (click)="edit(order)">edit</mat-icon>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="editing">
+    <app-new-order [editing]="!new" [currentOrder]="current" (closed)="new=false;editing=false"></app-new-order>
+  </div>
+</div>

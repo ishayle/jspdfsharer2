@@ -1,0 +1,24 @@
+<div class="order-header">
+  <div class="order-name">{{currentOrder?.id}}</div>
+</div>
+<div *ngIf="currentOrder">
+  <div>
+    <div *ngFor="let item of currentOrder?.items;let i=index">
+      <div class="items-list">
+        <app-item [item]="item" (removeItem)="removeItem(i)"></app-item>
+      </div>
+    </div>
+  </div>
+
+  <div class="new-order-actions">
+    <mat-icon class="order-actions" (click)="newItem()">add_circle</mat-icon>
+
+    <mat-icon *ngIf="currentOrder && currentOrder.items.length" class="order-actions" (click)="sendOrder()">share
+    </mat-icon>
+    <mat-icon *ngIf="currentOrder && currentOrder.items.length" class="order-actions" (click)="saveOrder()">save
+    </mat-icon>
+    <mat-icon *ngIf="currentOrder && currentOrder.items.length" class="order-actions" (click)="closeOrder()">
+      close
+    </mat-icon>
+  </div>
+</div>

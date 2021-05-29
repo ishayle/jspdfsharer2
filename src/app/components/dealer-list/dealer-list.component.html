@@ -1,0 +1,8 @@
+<div>
+  <div *ngFor="let dealer of dealers">
+    <div class="dealer-item">
+      <mat-icon (click)="remove(dealer)">remove_circle</mat-icon>
+      <div class="dealer-text">{{dealer}}</div>
+    </div>
+  </div>
+</div>

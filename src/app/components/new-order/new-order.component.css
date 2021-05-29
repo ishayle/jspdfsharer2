@@ -1,0 +1,26 @@
+.new-order-new-item {
+  display: flex;
+  width: 99%;
+}
+.items-list {
+  display: flex;
+}
+.order-name {
+  font-size: 20px;
+  margin: 15px;
+  text-decoration: underline;
+}
+.order-header {
+  display: flex;
+  justify-content: center;
+}
+
+.app-form {
+  display: flex;
+}
+.order-actions {
+  font-size: 40px;
+  margin: 10px;
+  margin-left: 20px;
+  color: #1d3557;
+}

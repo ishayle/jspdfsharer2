@@ -1,0 +1,8 @@
+<div>
+  <div *ngFor="let product of products">
+    <div class="product-item">
+      <mat-icon (click)="remove(product)">remove_circle</mat-icon>
+      <div>{{product}}</div>
+    </div>
+  </div>
+</div>

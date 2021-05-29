@@ -1,0 +1,35 @@
+:host {
+  height: 100%;
+}
+.app-main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+.app-body {
+  height: 99%;
+  overflow: auto;
+}
+.app-footer {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.nav-button {
+  flex: 0 50%;
+  background-color: #1D3557;
+  color: #A8DADC;
+  display: inline-flex;
+  align-items: center;
+  height: 75px;
+  padding: 0px 10px;
+  border: 1px solid #457B9D;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.nav-selected {
+  color: #1D3557;
+  background-color: #A8DADC;
+}

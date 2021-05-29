@@ -1,0 +1,17 @@
+.order-item {
+  display: flex;
+  height: 60px;
+  background-color: #457b9d;
+  margin: 15px;
+  align-items: center;
+}
+mat-icon {
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 25px;
+  color: #1d3557;
+}
+.new-order {
+  justify-content: center;
+  background-color: #a8dadc;
+}
