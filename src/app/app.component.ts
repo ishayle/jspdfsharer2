@@ -21,7 +21,7 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.storageService.SetStateFromStorage();
   }
-  
+
   showOrderListScreen() {
     this.showOrderList = true;
     this.showdealerList = false;
